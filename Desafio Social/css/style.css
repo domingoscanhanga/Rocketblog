@@ -1,0 +1,77 @@
+  /*        Gerais     */  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    background-color: var(--body-bg-color);
+    color: var(--purple);
+    
+  }
+body {
+    font-family: 'Poppins',sans-serif;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+    
+  /*        Header      */  
+}
+header{
+    text-align: center;
+}
+header p {
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.perfil img {
+    border-radius: 100%;
+    border: solid 3px var(--purple);
+    height: 170px;
+    width: 170px;  
+}
+  /*        main      */ 
+
+div.link {
+    border: solid 3px var(--purple);
+    border-radius: 5px;
+    height: 100%;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    width: 250px;
+}
+div.link:hover {
+    background-color: var(--purple);
+    border: solid 3px violet;
+    color: var(--body-bg-color);
+    font-weight: bolder;
+    transition: 0.5;
+}
+
+  /*        footer   */ 
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+footer ul li img:hover{
+    background-color: violet;
+    transition: .5;
+    width: 40px;    
+}
+
+
