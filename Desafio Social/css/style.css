@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
 html {
     --body-bg-color: #FAF7FD;
@@ -38,6 +37,10 @@ header p {
     width: 10rem;  
 }
   /*        main      */ 
+div.link a {
+	text-decoration: none;
+  
+}
 
 div.link {
     border: solid 0.1875rem var(--purple);
