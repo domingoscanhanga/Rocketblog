@@ -4,32 +4,38 @@
     margin: 0;
     padding: 0;
 }
-html {
+  :root {
     --body-bg-color: #FAF7FD;
     --purple: #BB99DD;
+  }
+html {
+    
     background-color: var(--body-bg-color);
-    color: var(--purple);
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
     
   }
-body {
+.container{
     margin-left: auto;
     margin-right: auto;
-    max-width: max-content;
+    max-width: max-content;  
 }
   /*        Header      */  
-header{
+.header{
     text-align: center;
     margin-top: 5rem;
 }
-header p {
+.header p {
     font-size: 1.1875rem;
     font-weight: bolder;
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
 }
-
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .perfil img {
     border-radius: 100%;
     border: solid 0.1875rem var(--purple);
@@ -37,25 +43,35 @@ header p {
     width: 10rem;  
 }
   /*        main      */ 
-div.link a {
-	text-decoration: none;
-  
+.nav a, 
+.nav a:visited
+ {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
-div.link {
+
+.nav {
     border: solid 0.1875rem var(--purple);
     border-radius: 0.3125rem;
     margin-bottom: 0.625rem;
     padding: 0.625rem 0;
     text-align: center;
     width: 15.625rem;
+    transition: .8s ease-in-out;
 }
-div.link:hover {
+.nav:hover {
     background-color: var(--purple);
-    border: solid 0.1875rem violet;
-    color: var(--body-bg-color);
-    font-weight: bolder;
-    transition: 0.5;
+    border: solid 0.1875rem violet; 
+    transition:ease-in-out ;  
+}
+.nav :hover a {
+  text-transform: uppercase;
+  color: var(--body-bg-color); 
+  
+   
 }
 
   /*        footer   */ 
@@ -63,16 +79,21 @@ div.link:hover {
 footer ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-top: 3.125rem;
+}
+footer ul li img {
+    border: solid 0.1rem var(--purple);
+    border-radius: 50%;
+    transform: scale(1.5);
 
 }
 
 footer ul li img:hover{
     background-color: violet;
-    transition: .5;
-    width: 2.5rem;    
+    
+    transform: translate(-4%, 4%) scale(2) rotate(-25deg);
+ 
 }
 
 
