@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    font-family: 'Roboto', sans-serif;;
+}
+img {
+    max-width: 100%;
+}
