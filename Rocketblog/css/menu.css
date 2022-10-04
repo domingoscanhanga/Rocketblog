@@ -1,18 +1,54 @@
 .menu {
+    background: var(--dark-bg);
+    display: block;
     position: absolute;
     top: 70px;
     left: 0;
-    
-    
-    transition: all 300ms ease-in-out;
-    transform: translatey(-1000px);
+    width: 50vw ;
+    transition: .6s;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
     z-index: 1000;
 }
 #nav.mostrar-menu .menu{
-    transform: translatey(0);
-    height: calc(100% - 70px);
-    
-   
-    overflow-x: auto;
-       
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;     
   }
+.btn-mobile {
+    color: var(--white);
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.hamburger {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+}
+.hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+    }
+.header--nav.mostrar-menu .hamburger {
+    border-top-color:transparent ;
+    }
+.header--nav.mostrar-menu .hamburger::after {
+    transform: rotate(135deg);
+    top: -7px;
+    }
+.header--nav.mostrar-menu .hamburger::before {
+    transform: rotate(-135deg);
+}   

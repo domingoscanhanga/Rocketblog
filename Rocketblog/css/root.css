@@ -21,7 +21,8 @@ ul {
     list-style: none;
 }
 a {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 img {
     max-width: 100%;
