@@ -9,12 +9,10 @@
     width: 0px;
     overflow-x: hidden;
     z-index: 1000;
-    
 }
-#nav.mostrar-menu .menu{
+.nav-add.mostrar-menu .menu{
     width: 50vw;
     overflow-x: auto;
-    
 }
 .menu a, .btn-mobile {
     font-family: 'Roboto', sans-serif;
@@ -23,7 +21,6 @@
 }
 .menu a {
     display: block;
-    color: var(--white);
     padding: 1rem;
 }
 .btn-mobile {
@@ -33,12 +30,10 @@
     border: none;
     background: none;
     cursor: pointer;
-    color: var(--white);
 }
 .hamburger, .hamburger::after, .hamburger::before {
     display: block;
     width: 20px;
-
 }
 .hamburger {
     border-top: 2px solid;
@@ -51,13 +46,13 @@
     transition: .3s;
     position: relative;
 }
-#nav.mostrar-menu .hamburger {
+.nav-add.mostrar-menu .hamburger {
     border-top-color: transparent;
 }
-#nav.mostrar-menu .hamburger::before  {
+.nav-add.mostrar-menu .hamburger::before  {
     transform: rotate(135deg);
 }
-#nav.mostrar-menu .hamburger::after {
+.nav-add.mostrar-menu .hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
     }

@@ -1,0 +1,20 @@
+.intro {
+    margin: 1rem;
+    flex-wrap: wrap;
+    
+}
+.intro--descricao {
+    flex: 2;
+    width: 320px;
+}
+.intro--descricao h2 {
+    color: var(--button-bg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1.6rem;
+}
+.intro--descricao p {
+    
+    font-family: 'Poppins', sans-serif;
+}

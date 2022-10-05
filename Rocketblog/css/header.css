@@ -1,12 +1,7 @@
-.dark-bg {
-    background: var(--dark-bg);
-   
-}
 .header {
     height: 70px;
     padding: 1rem;
     justify-content: space-around;
-    
 }
 .header a {
     display: block;
@@ -18,23 +13,28 @@
 .header--nav {
     order: 3;
 }
-
 .header--form {
     display: flex;
     padding-left:1rem;
-    
 }
 .header--form--search, .header--form--btn-search {
-    height: 22px;
+    height: 30px;
+    border: none;
 }
 .header--form--search {
     width: 100px;
+    outline: none;
+    border-radius: 3px 0px 0px 3px;
+    background: var(--dark-bg);
+}
+.header--form--search::placeholder{
+   text-align: center;
+    
 }
 .header--form--btn-search {
-    width: 22px;
-    background: var(--button-bg);
-    border: none;
-    border-radius: 0px 1px 1px 0px;
+    width: 30px;
+    background: var(--button-bg); 
+    border-radius: 0px 3px 3px 0px;
 }
 .header--form--btn-search img {
     width: 70%;

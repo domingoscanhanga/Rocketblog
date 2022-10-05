@@ -30,3 +30,10 @@ img {
   display: flex;
   align-items: center;
 }
+.purple-bg, .menu {
+  background: var(--purple-bg);
+ 
+}
+.menu a, .btn-mobile, .header--form--search, .intro--descricao p {
+  color:var(--white)
+}
