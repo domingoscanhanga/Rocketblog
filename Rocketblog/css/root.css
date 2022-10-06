@@ -29,12 +29,13 @@ img {
   }
   .purple-bg, .menu {
     background: var(--purple-bg);
+    border-bottom: solid 4px var(--green);
   }
   .container {
     max-width: 1170px;
     margin: 0 auto;
   }
-  .header, .header--form {
+  .header, .header--form, .intro {
     display: flex;
   }
   .header--nav button,.header--form--search,.header--form--btn-searc, .menu a {
