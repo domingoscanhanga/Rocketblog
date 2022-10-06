@@ -24,5 +24,20 @@ a {
     text-decoration: none;
 }
 img {
+    display: block;
     max-width: 100%;
+  }
+  .purple-bg, .menu {
+    background: var(--purple-bg);
+  }
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .header, .header--form {
+    display: flex;
+  }
+  .header--nav button,.header--form--search, .menu a {
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
 }

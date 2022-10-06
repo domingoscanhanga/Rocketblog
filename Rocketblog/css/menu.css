@@ -1,0 +1,10 @@
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+.menu a {
+    display: block;
+    margin: .5rem;
+    padding: 1rem;
+}
