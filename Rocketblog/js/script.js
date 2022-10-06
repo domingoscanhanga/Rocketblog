@@ -1,16 +1,8 @@
-const $btnMobile = document.querySelector('#btn-mobile')
-function toggleMenu () {
-    const $nav = document.querySelector('.nav-add')
+const $btnMenu = document.querySelector('#btn-menu')
+console.log($btnMenu) 
+function activarDesactivarMenu () {
+    const $nav = document.querySelector('#nav')
     $nav.classList.toggle('mostrar-menu')
 }
-$btnMobile.addEventListener('click', toggleMenu)
-
-const fecharMenu = document.querySelector('.menu a')
-function removerMenu (){
-    const $nav = document.querySelector('.nav-remove')
-    $nav.classList.remove('mostrar-menu') 
-}
-fecharMenu.addEventListener('click', removerMenu)
-console.log(fecharMenu)
-
+$btnMenu.addEventListener('click', activarDesactivarMenu)
 

@@ -37,7 +37,8 @@ img {
   .header, .header--form {
     display: flex;
   }
-  .header--nav button,.header--form--search, .menu a {
+  .header--nav button,.header--form--search,.header--form--btn-searc, .menu a {
     color: var(--white);
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }

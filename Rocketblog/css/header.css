@@ -24,7 +24,7 @@
     background: none;
 }
 .header--form {
-    margin:0 auto;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,10 +32,12 @@
     background: var(--dark-bg);
     width: 100px;
     outline: none;
+    border-radius: 3px 0px 0 3px;
 }
 .header--form--btn-searc {
     width: 30px;
     background: var(--button-bg);
+    border-radius: 0px 3px 3px 0px;
 }
 .header--form--btn-searc img {
     width: 70%;
