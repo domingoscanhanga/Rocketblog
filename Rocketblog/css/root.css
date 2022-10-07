@@ -38,8 +38,12 @@ img {
   .header, .header--form, .intro {
     display: flex;
   }
-  .header--nav button,.header--form--search,.header--form--btn-searc, .menu a {
+  .header--nav button,.header--form--search,.header--form--btn-searc, .menu a, .intro h2 {
     color: var(--white);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
+}
+.intro p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
 }

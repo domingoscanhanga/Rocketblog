@@ -1,4 +1,16 @@
 .intro {
     margin: 20px 5px;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+.intro h2,.intro p {
+    margin-bottom: 1rem;
+    flex: 1 0 290px;
+}
+.intro h2 {
+    color: var(--button-bg);
+    font-size: 1.8rem;
+    font-weight: bold;
+    }
+.intro p {
+    line-height: 1.4;
 }
