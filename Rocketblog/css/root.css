@@ -27,23 +27,8 @@ img {
     display: block;
     max-width: 100%;
   }
-  .purple-bg, .menu {
-    background: var(--purple-bg);
-    border-bottom: solid 4px var(--green);
-  }
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-  .header, .header--form, .intro {
-    display: flex;
-  }
-  .header--nav button,.header--form--search,.header--form--btn-searc, .menu a, .intro h2 {
-    color: var(--white);
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-}
-.intro p {
-  font-family: 'Roboto', sans-serif;
-  color: var(--white);
-}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
