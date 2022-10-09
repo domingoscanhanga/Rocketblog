@@ -27,7 +27,7 @@ img {
     display: block;
     max-width: 100%;
   }
-.fixed, .intro {
+.fixed, .main {
   background: var(--purple-bg) no-repeat center center;
 }
 .fixed {
@@ -42,17 +42,23 @@ img {
   margin: 0 auto;
   padding: 0 1rem;
 } 
-.header, .header--form {
+.header, .header--form, .intro, .veja-mais {
   display: flex;
-  color: var(--white);
 }
 .header--form--search, .header--form--btn-searc, .btn-menu  {
   border: none;
   background: none;
   outline: none;
 }
-.menu a, input.header--form--search::placeholder  {
+.menu a, input.header--form--search::placeholder, .titulo {
   font-family: 'Poppins', sans-serif; 
+}
+.spacing {
+  height: 70px;
+}
+.intro--descricao {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif
 }
 /*
 font-family: 'Roboto', sans-serif;

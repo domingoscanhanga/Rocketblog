@@ -1,0 +1,25 @@
+.intro {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    gap: 20px;
+    
+}
+.intro--descricao, .intro--baner {
+    flex: 1 0 300px;
+}
+.titulo  {
+    text-align: center;
+    color: var(--button-bg);
+    font-size: 2.5rem;
+}
+.intro--descricao .titulo {
+    margin-bottom:20px;
+}
+.intro--descricao p {
+    line-height: 1.5;
+}
+.veja-mais {
+    gap: 20px;
+    margin-top: 20px;
+}
