@@ -42,7 +42,7 @@ img {
   margin: 0 auto;
   padding: 0 1rem;
 } 
-.header, .header--form, .intro, .veja-mais {
+.header, .header--form, .intro, .veja-mais, .postagens {
   display: flex;
 }
 .header--form--search, .header--form--btn-searc, .btn-menu  {
@@ -50,16 +50,16 @@ img {
   background: none;
   outline: none;
 }
-.menu a, input.header--form--search::placeholder, .titulo {
+.menu a, input.header--form--search::placeholder, .titulo, .subtitulo {
   font-family: 'Poppins', sans-serif; 
 }
 .spacing {
   height: 70px;
 }
-.intro--descricao {
-  color: var(--white);
+.intro--descricao p, .postagens p  {
   font-family: 'Roboto', sans-serif
 }
+
 /*
 font-family: 'Roboto', sans-serif;
 

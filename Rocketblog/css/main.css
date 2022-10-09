@@ -1,12 +1,15 @@
+.main {
+    border-bottom: solid var(--green) 4px;
+}
 .intro {
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 40px 0px;
-    gap: 20px;
-    
+    gap: 20px;   
 }
 .intro--descricao, .intro--baner {
     flex: 1 0 300px;
+    color: var(--white);
 }
 .titulo  {
     text-align: center;

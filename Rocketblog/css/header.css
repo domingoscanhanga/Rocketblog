@@ -36,8 +36,6 @@ input.header--form--search::placeholder {
     display: block;
     color:currentColor;
     text-indent: 10px;
-    
-
 }
 .header--form--btn-searc {
     background: var(--button-bg);
