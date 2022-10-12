@@ -1,79 +1,74 @@
-<!DOCTYPE html>
-<html lang="pt-AO">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocketblog</title>
-    <link rel="stylesheet" href="./css/root.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/intro.css">
-</head>
-<body>
-    <div class="purple-bg">
-        <div class="container">
-            <header class="header">
-                <a href="index.html">
-                    <h1>Rocketblog
-                        <img src=".//images/logo.svg" alt="Logo da Rocketblog">
-                    </h1>
-                </a>
-                <nav class="header--nav" id="nav">
-                    <button id="btn-menu"></button>
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Contactos</a></li>
-                    </ul>
-                </nav>
-                <form action="post" class="header--form">
-                    <input type="search" class="header--form--search">
-                    <button type="submit" class="header--form--btn-searc">
-                        <img src=".//images/search.svg" alt="Botão de envio da pesquisa">
-                    </button>
-                </form>
-            </header>
-                <section class="intro">
+ <div class="fixed">
+            <div class="container">
+                <header class="header">
+                    <a href="index.html">
+                        <h1>Rocketblog<img src=".//images/logo.svg" alt="Logo da Rocketblog"> </h1>
+                    </a>
+                    <nav class="header--nav" id="nav">
+                        <button id="btn-menu" class="btn-menu">
+                            <span class="hamburguer"></span>
+                        </button>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Categorias</a></li>
+                            <li><a href="#">Contactos</a></li>
+                        </ul>
+                    </nav>
+                    <form action="post" class="header--form">
+                        <input type="search" placeholder="Buscar" class="header--form--search">
+                        <button type="submit" class="header--form--btn-search">
+                            <img src=".//images/search.svg" alt="Botão de envio da pesquisa">
+                        </button>
+                    </form>
+                </header>
+            </div>
+        </div>
+        <div class="spacing"></div>
+        <main class="main">
+            <div class="container">
+                <div class="intro">
                     <div class="intro--descricao">
-                        <h2>Veja o guia definitivo para consquistar seus objetivos como DEV em 2022</h2>
+                        <h1 class="titulo">Veja o guia definitivo para consquistar seus objetivos como DEV em 2022</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima accusamus rerum quisquam temporibus maxime fugit, non facilis, ea inventore quasi iusto, repellendus quas minus eligendi tempore iste harum voluptatum dolorum.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima accusamus rerum
+                            quisquam temporibus maxime fugit, non facilis, ea inventore quasi iusto.
                         </p>
-                        <p class="veja-mais">Veja mais <span><img src=".//images/arrow-right.svg" alt=""></span></p>
+                        <p class="veja-mais">
+                            Veja mais
+                            <span><img src=".//images/arrow-right.svg" alt=""></span>
+                        </p>
                     </div>
                     <div class="intro--baner">
                         <img src=".//images/featured-image.png" alt="Banner de introdução">
                     </div>
-                </section>
-        </div>
-    </div>
-    <div class="container postagens-um">
-        <section class="post-1">
-            <img src=".//images/post-1.png" alt="Imagem da primeira postagem">
-            <p>Janeiro 04, 2022</p>
-            <h2>Começando no React 2022</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi similique aut, quod voluptate praesentium facere velit deleniti illum non reiciendis aliquid qui possimus nesciunt officia veniam voluptatum perspiciatis maxime voluptatibus.
-             </p>
-        </section>
-        <section class="asside">
-            <div class="assid-post-1">
-                <p>Janeiro 04, 2022</p>
-                <h2>Conheça as principais tecnicas para conseguir uma vaga internacional em programação</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est consequatur quis tenetur quam, sed ipsa quisquam ex repellat laboriosam ipsam commodi incidunt placeat aspernatur, dolores fugit accusamus, cumque magni asperiores.</p>
+                </div>
             </div>
-            <div class="assid-post-1">
-                <p>Janeiro 04, 2022</p>
-                <h2>Veja a evolução do Front end na prática</h2>
+        </main>
+        <div class="container postagens">
+            <section class="postagens--post-1">
+                <img src=".//images/post-1.png" alt="Imagem da primeira postagem">
+                <p class="data">Janeiro 04, 2022</p>
+                <h2 class="subtitulo">Começando no React 2022</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga blanditiis libero iure culpa voluptatibus. Minus reiciendis iure adipisci cumque velit voluptatem sit qui, blanditiis aspernatur sint assumenda. Cumque, sint beatae.
-                </p>
-            </div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi similique aut, quod voluptate praesentium facere velit deleniti illum non reiciendis aliquid qui possimus nesciunt officia veniam voluptatum perspiciatis maxime voluptatibus.
+                 </p>
+            </section>
+            <section class="postagens--post-2">
+                <div class="postagens--post-2--post1">
+                    <p class="data">Janeiro 04, 2022</p>
+                    <h2 class="subtitulo">
+                        Conheça as principais tecnicas para conseguir uma vaga internacional em programação
+                    </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est consequatur quis tenetur quam, sed ipsa quisquam ex repellat laboriosam ipsam commodi incidunt placeat aspernatur, dolores fugit accusamus, cumque magni asperiores.</p>
+                </div>
+                <div class="postagens--post-2--post2">
+                    <p class="data">Janeiro 04, 2022</p>
+                    <h2 class="subtitulo">Veja a evolução do Front end na prática</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga blanditiis libero iure culpa voluptatibus. Minus reiciendis iure adipisci cumque velit voluptatem sit qui, blanditiis aspernatur sint assumenda. Cumque, sint beatae.
+                    </p>
+                </div>
+            </section>
 
-        </section>    
-    </div>
-    <script src="./js/script.js"></script>
-</body>
-</html>         
+        </div>
