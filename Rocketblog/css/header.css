@@ -1,0 +1,32 @@
+.header {
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	column-gap: 15px;
+}
+.logo {
+	font-size: 0px;
+}
+.logo img {
+	width: 100px;
+}
+.header--nav {
+	order: 3;
+}
+.header--form--search, .header--form--btn-search {
+	height: 30px;
+}
+.header--form--search {
+	background: var(--dark-bg);
+	border-radius: 3px 0px 0px 3px;
+	width: 100px;
+}
+input.header--form--search::placeholder {
+	color:currentColor;
+	text-indent: 10px;
+}
+.header--form--btn-search {
+	background: var(--button-bg);
+	border-radius: 0px 3px 3px 0px;
+	width: 25px;
+}

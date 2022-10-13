@@ -6,6 +6,7 @@
     --white: #fff;
     --light-purple: #fbf6ff;
     --green: #4fff4b;
+		
   }
   html {
     font-size: 62.5%;
@@ -57,7 +58,7 @@ img {
   height: 70px;
 }
 .intro--descricao p, .postagens p  {
-  font-family: 'Roboto', sans-serif
+  
 }
 
 
