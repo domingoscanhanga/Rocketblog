@@ -28,7 +28,14 @@ input.header--form--search::placeholder {
 .header--form--btn-search {
 	background: var(--button-bg);
 	border-radius: 0px 3px 3px 0px;
-	width: 25px;
+	width: 30px;
 }	
+.header--form--btn-search img {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+
 
 

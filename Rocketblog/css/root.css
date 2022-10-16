@@ -45,12 +45,15 @@ input, button {
 	right: 0;
 	width: 100%;
 }
-/*Container*/
+/*Container & Spacing*/
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 1rem;
 } 
+.spacing {
+	height: 70px;
+}
 /*FlexBox -- Color white*/
 .header, .header--nav, .header--form, .menu {
 	display: flex;
