@@ -52,7 +52,7 @@ input, button {
   padding: 0 1rem;
 } 
 /*FlexBox -- Color white*/
-.header, .header--nav, .header--form {
+.header, .header--nav, .header--form, .menu {
 	display: flex;
 }
 .header--nav a, .btn-menu, .header--form--search, .header--form--btn-search {
@@ -60,5 +60,4 @@ input, button {
 }
 .header--nav a {
 	font-family: var(--font-title);
-	
 }

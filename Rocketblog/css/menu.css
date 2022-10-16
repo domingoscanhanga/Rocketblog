@@ -1,0 +1,47 @@
+.menu {
+	flex-direction: column;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	background: #290742e8;
+	height: calc(100vh - 70px);
+	border-bottom: solid var(--green) 4px;
+	position: absolute;
+	transition: ease-in-out .6s;
+	overflow-x: hidden;
+	width: 0vw;
+}
+.header--nav.mostrar-menu .menu {
+	width:50vw;
+	overflow-x: auto;
+}
+.menu  a {
+	display: block;
+	font-size: 1.8rem;
+	padding:10px;
+}
+
+.hamburger, .hamburger::before, .hamburger::after  {
+	border-top: solid 2px currentColor;
+	display: block;
+	width: 20px;
+}
+.hamburger::before, .hamburger::after {
+	content: '';
+	margin-top: 5px;
+	transition: .3s all;
+	position: relative;
+}
+.header--nav.mostrar-menu .hamburger {
+	border-top-color:transparent; 
+}
+.header--nav.mostrar-menu .hamburger::before {
+	transform: rotate(136deg);
+}
+.header--nav.mostrar-menu .hamburger::after {
+	transform: rotate(-136deg);
+	top: -7px;
+}
+
+
+
