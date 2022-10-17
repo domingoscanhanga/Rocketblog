@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, .header--nav a, input.header--form--search::placeholder,
 }
 p {
 	font-family: var(--font-paragraph);
-	line-height: 1.4;
+	line-height: 1.5;
 }
 .fixed, .intro {
 	background:var(--purple-bg) no-repeat center center;
@@ -77,4 +77,14 @@ p {
 }
 .intro, .menu {
 	border-bottom: solid var(--green) 4px;
+}
+.main--description, .main--banner, .section-post-one--first-post, .section-post-one--second-post {
+	flex: 1 0 280px;
+}
+.main, .section-post-one {
+	flex-wrap: wrap;
+	padding: 3rem 0;
+}
+.subtitulo {
+	color: var(--purple-bg);
 }
