@@ -9,6 +9,9 @@
 	--green: #4fff4b;
 	--font-title: 'Poppins', sans-serif; 
 	--font-paragraph:'Roboto', sans-serif;
+	--font-size-small-device-title: 2rem;
+	--spacing-small-device: 3rem;
+	--margin-bottom-small-deice: 1.6rem;
 }
 /*RESET*/
 html {
@@ -36,8 +39,15 @@ input, button {
 	background: none;
 	outline: none;
 }
-.fixed {
-	background:var(--purple-bg) no-repeat center center;;
+h1, h2, h3, h4, h5, h6, .header--nav a, input.header--form--search::placeholder, .veja-mais  {
+	font-family: var(--font-title);
+}
+p {
+	font-family: var(--font-paragraph);
+	line-height: 1.4;
+}
+.fixed, .intro {
+	background:var(--purple-bg) no-repeat center center;
 }
 .fixed {
 	position: fixed;
@@ -50,17 +60,18 @@ input, button {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 1rem;
+  
 } 
 .spacing {
 	height: 70px;
 }
 /*FlexBox -- Color white*/
-.header, .header--nav, .header--form, .menu {
+.header, .header--nav, .header--form, .menu, .main, .veja-mais {
 	display: flex;
 }
-.header--nav a, .btn-menu, .header--form--search, .header--form--btn-search {
+.header--nav a, .btn-menu, .header--form--search, .header--form--btn-search, .main p {
 	color: var(--white);
 }
-.header--nav a {
-	font-family: var(--font-title);
+.intro, .menu {
+	border-bottom: solid var(--green) 4px;
 }
