@@ -1,6 +1,7 @@
 .main {
 	flex-wrap: wrap;
 	padding: 3rem 0;
+	row-gap: 0.8rem;
 	/*padding: 6rem 0;*/
 	/*column-gap: 15px;*/
 	/*column-gap: 12px;*/

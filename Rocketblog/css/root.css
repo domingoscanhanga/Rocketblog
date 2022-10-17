@@ -57,7 +57,7 @@ p {
 }
 /*Container & Spacing*/
 .container {
-  max-width: 1170px;
+  max-width: 1170px; 
   margin: 0 auto;
   padding: 0 1rem;
   
@@ -66,11 +66,14 @@ p {
 	height: 70px;
 }
 /*FlexBox -- Color white*/
-.header, .header--nav, .header--form, .menu, .main, .veja-mais {
+.header, .header--nav, .header--form, .menu, .main, .veja-mais, .section-post-one {
 	display: flex;
 }
 .header--nav a, .btn-menu, .header--form--search, .header--form--btn-search, .main p {
 	color: var(--white);
+}
+.header a, .header--form--btn-search {
+	cursor: pointer;
 }
 .intro, .menu {
 	border-bottom: solid var(--green) 4px;
