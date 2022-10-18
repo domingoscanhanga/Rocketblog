@@ -66,7 +66,7 @@ p {
 	height: 70px;
 }
 /*FlexBox -- Color white*/
-.header, .header--nav, .header--form, .menu, .main, .veja-mais, .section-post-one {
+.header, .header--nav, .header--form, .menu, .main, .veja-mais, .section-post-one, .section-post-two {
 	display: flex;
 }
 .header--nav a, .btn-menu, .header--form--search, .header--form--btn-search, .main p {
@@ -78,10 +78,10 @@ p {
 .intro, .menu {
 	border-bottom: solid var(--green) 4px;
 }
-.main--description, .main--banner, .section-post-one--first-post, .section-post-one--second-post {
+.main--description, .main--banner, .section-post-one--first-post, .section-post-one--second-post,.section-post-two--second-post {
 	flex: 1 0 280px;
 }
-.main, .section-post-one {
+.main, .section-post-one, .section-post-two {
 	flex-wrap: wrap;
 	padding: 3rem 0;
 }
