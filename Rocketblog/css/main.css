@@ -9,16 +9,18 @@
 .main--banner img {
 	margin: auto;
 }
+.veja-mais {
+	gap: 2rem;
+}
 .title, .main p  {
 	margin-bottom: var(--margin-bottom-small-deice);
 }
 .title, p.veja-mais{
 	color: var(--button-bg);
 }
+
 .title  {
 	font-size: var(--font-size-small-device-title);
 	margin-bottom: var(--margin-bottom-small-deice);
 }
-p.veja-mais {
-	column-gap: .8rem;
-}
+
