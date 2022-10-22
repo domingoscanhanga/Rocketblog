@@ -10,9 +10,10 @@
 		<meta name="author" content="Domingos Canhanga"/>
 		<meta name="robots" content="index, follow"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
-				rel="stylesheet"> 
+		 		rel="stylesheet">
 		<link rel="stylesheet" href=".//css/root.css"/>
 		<link rel="stylesheet" href=".//css/header.css"/>
 		<link rel="stylesheet" href=".//css/menu.css"/>
@@ -20,122 +21,34 @@
 		<link rel="stylesheet" href=".//css/section-post.css">
 	</head>
 	<body>
-<!-- ====================================			Header -> Menu, Form-header	============================================= -->
+<!-- ====================================  Header -> Menu, Form-header	============================================= -->
 		<div class="fixed">
 			<div class="container">
 				<header class="header">
-					<a href="index.html">
-						<h1 class="logo"> Rocketblog<img src=".//images/logo.svg" alt="Logo da Rocketblog" /></h1>
+					<a href="" class="logo">
+						<h1>Rocketblog<img src=".//images/logo.svg" alt="Logo da Rocketblog"/></h1>
 					</a>
-					<nav class="header--nav" id="nav">
-						<button id="btn-menu" class="btn-menu">
+					<nav id="header--nav" class="header--nav">
+						<button id="btn-menu">
 							<span class="hamburger"></span>
 						</button>
 						<ul class="menu">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Sobre</a></li>
 							<li><a href="#">Categorias</a></li>
-							<li><a href="#">Contatos</a></li>
+							<li><a href="#">Contacto</a></li>
 						</ul>
 					</nav>
-					<form action="post" class="header--form">
-						<input type="search" placeholder= "Buscar" class="header--form--search" />
-						<button type="submit" class="header--form--btn-search">
-							<img src=".//images/search.svg" alt="Botão de envio da pesquisa" />
+					<form action="" method="post" class="header--form">
+						<input type="source" placeholder="Buscar" class="header--form-source">
+						<button type="submit"  class="header--form--btn-search"> 
+							<img src=".//images/search.svg" alt="Botão de pesquisar">
 						</button>
 					</form>
 				</header>
 			</div>
 		</div>
-		<div class="spacing"></div>
-<!-- ==========================================		Intro -> Main		======================================================= -->
-		<div class="intro">
-			<div class="container">
-				<main class="main">
-					<div class="main--description">
-						<h1 class="title">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-						<p class="veja-mais">
-							 <span>Veja mais</span>
-							 <img src=".//images/arrow-right.svg" alt="arrow image">
-						</p>
-					</div>
-					<div class="main--banner">
-						<img src=".//images/featured-image.png" alt="Banner de introdução">
-					</div>
-				</main>
-			</div>
-		</div>
-<!-- ========================================		section-post-one		============================================== -->		
-		<div class="container"> 
-			<section class="section-post-one">
-				<div class="section-post-one--first-post">
-					<img src=".//images/post-1.png" alt="Imagem da primeira postagem">
-					<p class="time">Janeiro 04, 2022</p>
-					<h2 class="subtitulo">Começando no React 2022</h2>
-					<p>
-						É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-					 </p>
-				</div>
-				<div class="section-post-one--second-post">
-					<div class="block">
-						<p class="time">Janeiro 04, 2022</p>
-						<h2 class="subtitulo">
-							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
-						</h2>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-					</div>
-					<div class="block"> 
-						<p class="time">Janeiro 04, 2022</p>
-						<h2 class="subtitulo">
-							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
-						</h2>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-					</div>
-				</div>
-			</section>
-<!-- ========================================		section-post-two		============================================== -->	
-			<section class="section-post-two">
-				<div class="section-post-two--post">
-					<img src=".//images/post-2.png" alt="imagem do post, um homem editando código de programação no computador">
-					<p class="time">Janeiro 04, 2022</p>
-						<h2 class="subtitulo">
-							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
-						</h2>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-
-				</div>
-				<div class="section-post-two--post">
-					<img src=".//images/post-3.png" alt="imagem do segundo post, um editor de código aberto">
-					<p class="time">Janeiro 04, 2022</p>
-						<h2 class="subtitulo">
-							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
-						</h2>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-				</div>
-				<div class="section-post-two--post">
-					<img src=".//images/post-4.png" alt="imagem do terceiro post, um smart phone">
-					<p class="time">Janeiro 04, 2022</p>
-						<h2 class="subtitulo">
-							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
-						</h2>
-						<p>
-							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
-						</p>
-				</div>
-			</section>
-		</div>
-		<script src=".//js/script.js"></script>
+	<script src=".//js/script.js"></script>
 	</body>
 </html>
 

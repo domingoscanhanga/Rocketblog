@@ -1,6 +1,6 @@
-const btnMenu = document.querySelector('#btn-menu')
+const $btnMenu = document.querySelector ('#btn-menu')
 function toggleMenu () {
-	const nav = document.querySelector ('#nav')
-	nav.classList.toggle('mostrar-menu')
+	const $headerNav = document.querySelector ('#header--nav')
+	$headerNav.classList.toggle('MenuMobile')
 }
-btnMenu.addEventListener('click', toggleMenu)
+$btnMenu.addEventListener ('click', toggleMenu)

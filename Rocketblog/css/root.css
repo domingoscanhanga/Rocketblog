@@ -1,92 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
-/*VARIÁVEIS CSS*/
+/*Variables*/
 :root {
+	/*Color*/
 	--purple-bg: #290742;
 	--dark-bg: #170027;
 	--button-bg: #9e6dc2;
 	--white: #fff;
 	--light-purple: #fbf6ff;
 	--green: #4fff4b;
-	--font-title: 'Poppins', sans-serif; 
-	--font-paragraph:'Roboto', sans-serif;
-	--font-size-small-device-title: 2rem;
-	--spacing-small-device: 3rem;
-	--margin-bottom-small-deice: 1.6rem;
+	/*fonts*/
+	--font-family-title: Poppins, 'sans-serif';
 }
-/*RESET*/
-html {
+/*Reset*/
+*{
+	box-sizing: border-box;
 	font-size: 62.5%;
+	margin: 0;
+	padding-left: 0;
+}
+body {
 	scroll-behavior: smooth;
-}
-
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-size: 1.6rem;
-}
-ul {
-	list-style: none;
+	font-size: 1.6rem;
 }
 a {
 	text-decoration: none;
 }
 img {
-	display: block;
 	max-width: 100%;
 }
+ul {
+	list-style: none;
+}
 input, button {
-	border: none;
 	background: none;
-	outline: none;
+	border: none;
 }
-h1, h2, h3, h4, h5, h6, .header--nav a, input.header--form--search::placeholder, .veja-mais  {
-	font-family: var(--font-title);
-}
-p {
-	font-family: var(--font-paragraph);
-	line-height: 1.6;
-}
-.fixed, .intro {
-	background:var(--purple-bg) no-repeat center center;
+/*purple-bg e fixed*/
+.fixed {
+	background: var(--purple-bg);
 }
 .fixed {
 	position: fixed;
+	width: 100%;
 	top: 0;
 	right: 0;
-	width: 100%;
+	left: 0;
 }
-/*Container & Spacing*/
+/*container*/
 .container {
-  max-width: 1170px; 
-  margin: 0 auto;
-  padding: 0 1rem;
-  
-} 
-.spacing {
-	height: 70px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
-/* FlexBox */
-.header, /*.header--nav,*/ .header--form, .menu, .main, .veja-mais, .section-post-one, .section-post-two  {
+/* flex-container*/
+.header, .header--form {
 	display: flex;
 }
-/*Color white*/
-.header--nav a, .btn-menu, .header--form--search, .header--form--btn-search, .main p {
+
+/*color-white*/
+.menu a, .hamburger, .header--form-source {
 	color: var(--white);
 }
-.header a, .header--form--btn-search {
-	cursor: pointer;
+/*font--title*/
+.menu a, .header--form-source {
+	font-family: var(--font-family-title);
 }
-.intro, .menu {
-	border-bottom: solid var(--green) 4px;
+/* hight, .logo img, .header--form-source, .header--form--btn-search, .header--nav button  */
+.logo img, .header--form-source, .header--form--btn-search, .header--nav button {
+	height: 30px;
 }
-.main--description, .main--banner, .section-post-one--first-post, .section-post-one--second-post,.section-post-two--post {
-	flex: 1 1 300px;
-}
-.main, .section-post-one, .section-post-two {
-	flex-wrap: wrap;
-	padding: 3rem 0;
-}
-.subtitulo {
-	color: var(--purple-bg);
-}
+
+
+
+
+
