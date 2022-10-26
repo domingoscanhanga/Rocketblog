@@ -34,4 +34,26 @@
 	text-indent: 	15px;
 	padding-bottom: 2px;
 }
+@media  screen and (min-width: 641px) and (max-width: 1007px) {
+	.header--form-source {
+		width: 150px;
+	}
+	.header--form--btn-search {
+		width: 50px;
+	}
 
+}
+@media  screen and (min-width: 1008px) {
+	.header--form {
+		order:4;
+	}
+
+}
+
+
+
+
+/*
+Média (641 px a 1.007 px)
+
+*/

@@ -5,12 +5,11 @@
 	top: var(--spacing);
 	left: 0;
 	z-index: 200;
-	background: var(--purpleBg);
+	background: #290742d7;
 	height: calc(100vh - var(--spacing));
 	transition: ease-in .6s;
 	overflow-x: hidden; 	
 	width: 0vw;
-	
 }
 .menu a {
 	display: block;
@@ -59,8 +58,14 @@
 #header--nav.MenuMobile .hamburger::before {
 	transform: rotate(-135deg);
 }
-
-
-
-
-	
+/*Mdia*/
+@media  screen and (min-width: 641px) and (max-width: 1007px) {
+	.menu {
+		flex-direction: row;
+		align-items: center;
+		height: var(--spacing);
+	}
+	#header--nav.MenuMobile .menu {
+		width: 100vw;
+	}
+}

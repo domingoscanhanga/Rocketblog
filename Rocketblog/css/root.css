@@ -11,11 +11,14 @@
 	--fontTitle: Poppins, 'sans-serif';
 	--fontParagraph: Roboto, 'sans-serif';
 	/*Sizes*/
-	--spacing: 70px;
+	--spacing: 75px;
 	--sizeOne: 1rem;
 	--sizeTwo: 1.6rem;
-	--sizeTree: 1.7rem;
+	--sizeTree: 1.8rem;
 	--sizeFour: 2rem;
+	/*Small Device*/
+	--sizeSmallDeviceTitle: 2.5rem;
+	--sizeSmallDeviceSubtitle: 2rem;
 	
 }
 /*Reset*/
@@ -23,7 +26,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding-left: 0;
-	font-size: 1.6rem;
+	font-size: var(--sizeTwo);
 }
 html {
 	font-size: 62.5%;
@@ -46,15 +49,6 @@ ul {
 input, button {
 	background: none;
 	border: none;
-}
-/*Headings*/
-.title, .subtitle{
-	font-family: var(--fontTitle);
-}
-.subtitle {
-	color: var(--darkBg);
-	font-size: var(--sizeFour);
-	margin: 10px 0;
 }
 p {
 	font-family: var(--fontParagraph);
@@ -86,8 +80,16 @@ p {
 .menu a, .hamburger, .header--form-source, .intro p {
 	color: var(--white);
 }
+/*Color-darkBg*/
+.subtitle {
+	color: var(--darkBg);
+}
 /*font--title*/
-.menu a, .header--form-source, .title {
+.menu a, .header--form-source, .title, .subtitle {
+	font-family: var(--fontTitle);
+}
+/*Headings*/
+.title, .subtitle{
 	font-family: var(--fontTitle);
 }
 /* hight, .logo img, .header--form-source, .header--form--btn-search, .header--nav button  */

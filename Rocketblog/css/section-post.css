@@ -1,14 +1,17 @@
 .section-post-one, .section-post-two {
-	margin-top: 10rem;
-	margin-bottom: 10rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 .section-post-one p, .section-post-two p {
-	margin: 20px 0;
+	margin: 2rem 0;
 }
 .second-post--block:nth-child(2) {
 	border-top: 2px solid #f7f0fd;
 	margin-top: 3rem;
-	padding-top: 20px;
+	padding-top: 2rem;
+}
+.subtitle {
+	font-size: var(--sizeSmallDeviceSubtitle);
 }
 .time {
 	margin: 10px 0;
