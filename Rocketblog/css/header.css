@@ -1,7 +1,8 @@
 .header {
-	height: 70px;
+	height:var(--spacing);
 	align-items: center;
 	justify-content: space-between;
+	
 }
 .logo h1 {
 	font-size: 0px;
@@ -13,13 +14,13 @@
 	order: 3;
 }
 .header--form-source {
-	background: var(--dark-bg);
+	background: var(--darkBg);
 	border-radius: 3PX 0PX 0PX 3px;
 	outline: none;
 	width: 100px;
 }
 .header--form--btn-search {
-	background: var(--button-bg);
+	background: var(--buttonBg);
 	cursor: pointer;
 	border-radius: 0PX 3PX 3PX 0PX;
 }

@@ -1,30 +1,43 @@
 /*Variables*/
 :root {
 	/*Color*/
-	--purple-bg: #290742;
-	--dark-bg: #170027;
-	--button-bg: #9e6dc2;
+	--purpleBg: #290742;
+	--darkBg: #170027;
+	--buttonBg: #9e6dc2;
 	--white: #fff;
-	--light-purple: #fbf6ff;
+	--lightPurple: #fbf6ff;
 	--green: #4fff4b;
 	/*fonts*/
-	--font-family-title: Poppins, 'sans-serif';
+	--fontTitle: Poppins, 'sans-serif';
+	--fontParagraph: Roboto, 'sans-serif';
+	/*Sizes*/
+	--spacing: 70px;
+	--sizeOne: 1rem;
+	--sizeTwo: 1.6rem;
+	--sizeTree: 1.7rem;
+	--sizeFour: 2rem;
+	
 }
 /*Reset*/
 *{
 	box-sizing: border-box;
-	font-size: 62.5%;
 	margin: 0;
 	padding-left: 0;
+	font-size: 1.6rem;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
-	scroll-behavior: smooth;
-	font-size: 1.6rem;
+	background: var(--lightPurple);
+	font-size: var(--sizeTwo);
 }
 a {
 	text-decoration: none;
 }
 img {
+	
 	max-width: 100%;
 }
 ul {
@@ -34,9 +47,23 @@ input, button {
 	background: none;
 	border: none;
 }
+/*Headings*/
+.title, .subtitle{
+	font-family: var(--fontTitle);
+}
+.subtitle {
+	color: var(--darkBg);
+	font-size: var(--sizeFour);
+	margin: 10px 0;
+}
+p {
+	font-family: var(--fontParagraph);
+	line-height: 1.5;
+	font-size: var(--sizeTree);
+}
 /*purple-bg e fixed*/
-.fixed {
-	background: var(--purple-bg);
+.fixed, .intro {
+	background: var(--purpleBg);
 }
 .fixed {
 	position: fixed;
@@ -47,29 +74,41 @@ input, button {
 }
 /*container*/
 .container {
-	max-width: 1200px;
+	max-width: 120rem;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 var(--sizeTwo);
 }
 /* flex-container*/
-.header, .header--form {
+.header, .menu, .header--form, .main{
 	display: flex;
 }
-
 /*color-white*/
-.menu a, .hamburger, .header--form-source {
+.menu a, .hamburger, .header--form-source, .intro p {
 	color: var(--white);
 }
 /*font--title*/
-.menu a, .header--form-source {
-	font-family: var(--font-family-title);
+.menu a, .header--form-source, .title {
+	font-family: var(--fontTitle);
 }
 /* hight, .logo img, .header--form-source, .header--form--btn-search, .header--nav button  */
 .logo img, .header--form-source, .header--form--btn-search, .header--nav button {
 	height: 30px;
 }
-
-
-
+.spacing{
+	height: var(--spacing);
+}
+/*grid-container*/
+.main, .section-post-one, .section-post-two {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	justify-content: space-around;
+	gap : 20px;
+}
+/*Max-width of grid-child*/
+.main--description, .main--banner, 
+.section-post-one--first-post, .section-post-one--second-post, 
+.section-post-two--post  {
+	max-width: 500px;
+}
 
 
