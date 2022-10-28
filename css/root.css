@@ -68,7 +68,7 @@ p {
 }
 /*container*/
 .container {
-	max-width: 960px;
+	max-width: 120rem;
 	margin: 0 auto;
 	padding: 0 var(--sizeTwo);
 }
