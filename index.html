@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+	<head>
+		<title>Rocketblog</title>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Um website para iniciantes em programação"/>
+		<meta name="keywords" content="Front end, desenvolvimento web"/>
+		<meta name="author" content="Domingos Canhanga"/>
+		<meta name="robots" content="index, follow"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
+		 		rel="stylesheet">
+		<link rel="stylesheet" href=".//css/root.css"/>
+		<link rel="stylesheet" href=".//css/header.css"/>
+		<link rel="stylesheet" href=".//css/menu.css"/>
+		<link rel="stylesheet" href=".//css/main.css"/>
+		<link rel="stylesheet" href=".//css/section-post.css">
+	</head>
+	<body>
+<!-- ====================================  Header -> Menu, Form-header	============================================= -->
+		<div class="fixed">
+			<div class="container">
+				<header class="header">
+					<a href="" class="logo">
+						<h1>Rocketblog<img src=".//images/logo.svg" alt="Logo da Rocketblog"/></h1>
+					</a>
+					<nav id="header--nav" class="header--nav">
+						<button id="btn-menu">
+							<span class="hamburger"></span>
+						</button>
+						<ul class="menu">
+							<li><a href=".//index.html">Home</a></li>
+							<li><a href="#sobre">Sobre</a></li>
+							<li><a href="#categorias">Categorias</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+					</nav>
+					<form action="post" method="post" class="header--form">
+						<input type="search" placeholder="Buscar" class="header--form-source">
+						<button type="submit"  class="header--form--btn-search"> 
+							<img src=".//images/search.svg" alt="Botão de pesquisar">
+						</button>
+					</form>
+				</header>
+			</div>
+		</div>
+		<div class="spacing"></div>
+<!-- ==========================================		Intro -> Main	======================================================= -->
+		<div class="intro">
+			<div class="container">
+				<main class="main" >
+					<div class="main--description">
+						<h1 class="title">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h1>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+						<p class="veja-mais">
+							 <span>Veja mais</span>
+							 <img src=".//images/arrow-right.svg" alt="arrow image">
+						</p>
+					</div>
+					<div class="main--banner">
+						<img src=".//images/featured-image.png" alt="Banner de introdução">
+					</div>
+				</main>
+			</div>
+		</div>
+		<div class="sticky-role"></div>
+<!-- ========================================		section-post-one		============================================== -->		
+		<div class="container"> 
+			<section class="section-post-one">
+				<div class="section-post-one--first-post">
+					<img src=".//images/post-1.png" alt="Imagem da primeira postagem">
+					<p class="time">Janeiro 04, 2022</p>
+					<h2 class="subtitle">Começando no React 2022</h2>
+					<p>
+						É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+					 </p>
+				</div>
+				<div class="section-post-one--second-post">
+					<div class="second-post--block">
+						<p class="time">Janeiro 04, 2022</p>
+						<h2 class="subtitle">
+							 Conheça as principais técnicas para conseguir uma vaga internacional em programação
+						</h2>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+					</div>
+					<div class="second-post--block"> 
+						<p class="time">Janeiro 04, 2022</p>
+						<h2 class="subtitle">
+							Veja a evolução do Front-end na prática
+						</h2>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+					</div>
+				</div>
+			</section>
+<!-- ========================================		section-post-two		============================================== -->	
+			<section class="section-post-two">
+				<div class="section-post-two--post">
+					<img src=".//images/post-2.png" alt="imagem do post, um homem editando código de programação no computador">
+					<p class="time">Janeiro 04, 2022</p>
+						<h2 class="subtitle">
+							 10 dicas para conseguir a vaga desejada
+						</h2>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+				</div>
+				<div class="section-post-two--post">
+					<img src=".//images/post-3.png" alt="imagem do segundo post, um editor de código aberto">
+					<p class="time">Janeiro 04, 2022</p>
+						<h2 class="subtitle">
+							Deixe o seu códigos mais semântico com essas dicas
+						</h2>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+				</div>
+				<div class="section-post-two--post">
+					<img src=".//images/post-4.png" alt="imagem do terceiro post, um smart phone">
+					<p class="time">Janeiro 04, 2022</p>
+						<h2 class="subtitle">
+							 Use essas dicas nas suas aplicações mobile
+						</h2>
+						<p>
+							É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.
+						</p>
+				</div>
+			</section>
+		<script src=".//js/script.js"></script>
+	</body>
+</html>
+
