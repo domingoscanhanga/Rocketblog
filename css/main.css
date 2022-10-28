@@ -5,7 +5,7 @@
 }
 .sticky-role{
 	height: 4px;
-	width: 100vw;	
+	
 	background: var(--green);
 	position: sticky;
 	top: var(--spacing);
