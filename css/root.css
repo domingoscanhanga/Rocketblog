@@ -68,7 +68,7 @@ p {
 }
 /*container*/
 .container {
-	max-width: 1200px;
+	max-width: 120rem;
 	margin: 0 auto;
 	padding: 0 var(--sizeTwo);
 }
@@ -94,7 +94,7 @@ p {
 }
 /* hight, .logo img, .header--form-source, .header--form--btn-search, .header--nav button  */
 .logo img, .header--form-source, .header--form--btn-search, .header--nav button {
-	height: 30px;
+	height: 35px;
 }
 .spacing{
 	height: var(--spacing);
@@ -104,7 +104,8 @@ p {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	justify-content: space-around;
-	gap : 20px;
+	column-gap : 30px;
+	row-gap: 20px;
 }
 /*Max-width of grid-child*/
 .main--description, .main--banner, 

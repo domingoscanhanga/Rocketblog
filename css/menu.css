@@ -31,7 +31,7 @@
 }
 .hamburger, .hamburger::before, .hamburger::after {
 	display: block;
-	width: 30px;
+	width: 25px;
 	border-top: 2px solid currentColor;
 }
 .hamburger::before, .hamburger::after {
@@ -53,9 +53,52 @@
 }
 #header--nav.MenuMobile .hamburger::after {
 	transform: rotate(135deg);
-	top: -10.2px;
+	top: -10px;
 }
 #header--nav.MenuMobile .hamburger::before {
 	transform: rotate(-135deg);
 }
+/**/
+@media  (min-width: 641px) and (max-width: 1007px)	{
+	.menu {
+		flex-direction: row;
+		height: calc(25vh - var(--spacing));
+	}
+	#header--nav.MenuMobile .menu {
+		width: 100vw;
+	}
+}
+@media  (min-width: 1006px)	{
+	.hamburger, .hamburger::before, .hamburger::after {
+		display: none;
+	}
+	.menu {
+		flex-direction: row;
+		position: relative;
+		top: -11px;
+		width: auto;
+		height: auto;
+		background-color: inherit;
+	}
+	.menu a {
+		transition: none;
+		transform: translateX(0px);
+	}
+	.menu a::before{
+		content: '';
+		display:none;
+	}
+	.menu a:focus-within::before{
+		content: '';
+		display: inline-block;
+		height: 20px;
+		width: 4px;
+		background-color: var(--green);
+		margin-right: 5px;
+		position: relative;
+		top: 4px;
+	}
+	
+}
+
 
