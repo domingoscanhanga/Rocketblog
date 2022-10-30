@@ -1,3 +1,6 @@
+.fixed {
+	z-index: 100;
+}
 .header {
 	height:var(--spacing);
 	align-items: center;
@@ -33,13 +36,13 @@
 	text-indent: 	15px;
 	padding-bottom: 2px;
 }
-@media  (min-width: 641px) and (max-width: 1007px)	{
+@media  (min-width: 641px) and (max-width: 939px)	{
 	.header--form-source {
 		width: 150px;
 	}
 }
 
-@media  (min-width: 1006px)	{
+@media  (min-width: 940px)	{
 	.header--nav {
 		order: 0;
 	}
@@ -51,3 +54,4 @@
 	}
 	
 }
+

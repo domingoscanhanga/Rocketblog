@@ -4,7 +4,6 @@
 	position: absolute;
 	top: var(--spacing);
 	left: 0;
-	z-index: 200;
 	background: #290742d7;
 	height: calc(100vh - var(--spacing));
 	transition: ease-in .6s;
@@ -31,7 +30,7 @@
 }
 .hamburger, .hamburger::before, .hamburger::after {
 	display: block;
-	width: 25px;
+	width: 30px;
 	border-top: 2px solid currentColor;
 }
 .hamburger::before, .hamburger::after {
@@ -53,52 +52,62 @@
 }
 #header--nav.MenuMobile .hamburger::after {
 	transform: rotate(135deg);
-	top: -10px;
+	top: -10.2px;
 }
 #header--nav.MenuMobile .hamburger::before {
 	transform: rotate(-135deg);
 }
-/**/
-@media  (min-width: 641px) and (max-width: 1007px)	{
-	.menu {
-		flex-direction: row;
-		height: calc(25vh - var(--spacing));
-	}
+/*Mdia*/
+@media  screen and (min-width: 641px) and (max-width:939px) {
 	#header--nav.MenuMobile .menu {
 		width: 100vw;
 	}
+	.menu {
+		flex-direction: row;
+		align-items: center;
+		height: var(--spacing);	
+	}
 }
-@media  (min-width: 1006px)	{
-	.hamburger, .hamburger::before, .hamburger::after {
+@media  screen and (min-width: 940px)  {
+	.hamburger {
 		display: none;
 	}
 	.menu {
-		flex-direction: row;
-		position: relative;
-		top: -11px;
+		background: none;
 		width: auto;
+		position: relative;
+		top: -20px;
+		flex-direction: row;
+		align-items: center;
 		height: auto;
-		background-color: inherit;
+		transition: none;
 	}
 	.menu a {
+		margin-bottom: 0rem;
 		transition: none;
 		transform: translateX(0px);
 	}
 	.menu a::before{
-		content: '';
-		display:none;
+		content: none;
 	}
-	.menu a:focus-within::before{
-		content: '';
-		display: inline-block;
-		height: 20px;
-		width: 4px;
-		background-color: var(--green);
-		margin-right: 5px;
-		position: relative;
-		top: 4px;
-	}
+	.menu a:hover::before, .menu a:focus-within::before{
 	
+	content: '';
+	display: inline-block;
+	height: 20px;
+	width: 4px;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
+	}
+	#header--nav.MenuMobile .menu {
+		width: 100vw;
+	}
+	#header--nav.MenuMobile .menu a {
+		transform: none;
+	}
+	#header--nav.MenuMobile .menu {
+		width:auto;
+		overflow-x:auto;
+	}
 }
-
-
