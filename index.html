@@ -29,10 +29,14 @@
 						<h1>Rocketblog<img src=".//images/logo.svg" alt="Logo da Rocketblog"/></h1>
 					</a>
 					<nav id="header--nav" class="header--nav">
-						<button id="btn-menu">
+						<button id="btn-menu" 
+						aria-label="Abrir Menu" 
+						aria-haspopup="true" 
+						aria-controls="menu"
+						aria-expanded="false">
 							<span class="hamburger"></span>
 						</button>
-						<ul class="menu">
+						<ul class="menu" id="menu" role="menu">
 							<li><a href="#sobre">Home</a></li>
 							<li><a href="#sobre">Sobre</a></li>
 							<li><a href="#categorias">Categorias</a></li>
